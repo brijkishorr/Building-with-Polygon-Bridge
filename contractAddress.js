@@ -1,5 +1,5 @@
 
     module.exports = {
-      nftAddress : "0x0D6B5287E739cb116577A228a377e2Fe32567414"
+      nftAddress : "0x13672310a54cF887b9F9FBB5752C293CAA24aFCf"
     }
   
