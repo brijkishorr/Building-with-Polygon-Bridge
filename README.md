@@ -15,7 +15,7 @@ To successfully complete the Final Challenge, your project should meet the follo
    
 2. **Store items on IPFS using pinata.cloud**: Upload the generated images to IPFS (InterPlanetary File System) using the Pinata service for decentralized storage.
    
-3. **Deploy an ERC721 or ERC1155 to the Goerli Ethereum Testnet**: Choose and deploy either an ERC721 or ERC1155 smart contract to the Goerli Testnet, which will represent your NFT collection.
+3. **Deploy an ERC721 or ERC1155 to the sepolia Ethereum Testnet**: Choose and deploy either an ERC721 or ERC1155 smart contract to the sepolia Testnet, which will represent your NFT collection.
    
 4. **Prompt Description Function**: Implement a function called `promptDescription` in your smart contract that returns the prompt used to generate the images.
    
@@ -23,7 +23,7 @@ To successfully complete the Final Challenge, your project should meet the follo
    
 6. **Write a Hardhat Script to Batch Mint All NFTs**: Create a script using Hardhat to batch mint all the NFTs in your collection. Using the `ERC721A` standard is optimal for this purpose.
    
-7. **Write a Hardhat Script to Batch Transfer All NFTs from Ethereum to Polygon Mumbai using the FxPortal Bridge**: Develop a script to transfer all minted NFTs from the Ethereum network to the Polygon Mumbai testnet using the FxPortal Bridge.
+7. **Write a Hardhat Script to Batch Transfer All NFTs from Ethereum to Polygon amoy using the FxPortal Bridge**: Develop a script to transfer all minted NFTs from the Ethereum network to the Polygon amoy testnet using the FxPortal Bridge.
 
 ## Getting Started
 
@@ -32,8 +32,8 @@ To successfully complete the Final Challenge, your project should meet the follo
 - Node.js and npm installed
 - Hardhat installed
 - Pinata.cloud account
-- Goerli Testnet faucet for test Ether
-- Polygon Mumbai Testnet faucet for test MATIC
+- sepolia Testnet faucet for test Ether
+- Polygon amoy Testnet faucet for test MATIC
 
 ### Installation
 
@@ -59,19 +59,19 @@ To successfully complete the Final Challenge, your project should meet the follo
      ```sh
      npx hardhat compile
      ```
-   - Deploy the contract to Goerli Testnet:
+   - Deploy the contract to sepolia Testnet:
      ```sh
-     npx hardhat run scripts/deploy.js --network goerli
+     npx hardhat run scripts/deploy.js --network sepolia
      ```
 
 4. **Mint NFTs**: Use the batch minting script to mint your NFTs.
    ```sh
-   npx hardhat run scripts/batchMint.js --network goerli
+   npx hardhat run scripts/batchMint.js --network sepolia
    ```
 
-5. **Transfer to Polygon**: Transfer your NFTs to Polygon Mumbai using the batch transfer script.
+5. **Transfer to Polygon**: Transfer your NFTs to Polygon amoy using the batch transfer script.
    ```sh
-   npx hardhat run scripts/batchTransfer.js --network mumbai
+   npx hardhat run scripts/batchTransfer.js --network amoy
    ```
 
 ## Scripts
